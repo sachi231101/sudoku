@@ -1,0 +1,83 @@
+/* neon-theme.css */
+:root {
+    --primary-bg: #0a0a0a;
+    --cell-bg: #1a1a1a;
+    --cell-border: #333;
+    --box-border: #00ff9d;
+    --text-color: #f0f0f0;
+    --solved-bg: rgba(0, 255, 157, 0.1);
+    --button-bg: transparent;
+    --button-text: #00ff9d;
+    --button-hover: rgba(0, 255, 157, 0.2);
+  }
+  
+  body {
+    background-color: var(--primary-bg);
+    font-family: 'Courier New', monospace;
+  }
+  
+  .sudoku-container {
+    background-color: #111;
+    border: 1px solid #333;
+  }
+  
+  h1 {
+    color: #00ff9d;
+    text-shadow: 0 0 5px rgba(0, 255, 157, 0.3);
+  }
+  
+  .grid {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .cell {
+    color: var(--text-color);
+    background-color: var(--cell-bg);
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    width: 45px;
+    height: 45px;
+    font-size: 30px;
+  
+  }
+  
+  .cell:focus {
+    outline: 1px solid #00ff9d;
+    box-shadow: 1px 1px 1px 1px rgba(0, 255, 157, 0.3);
+  }
+  
+  .cell.solved {
+    background-color: var(--solved-bg);
+  }
+
+  .cell.generated {
+    background-color: rgba(0, 255, 157, 0.2); /* Background for pre-generated numbers */
+    color: #00ff9d; /* Text color for pre-generated numbers */
+  }
+
+  .cell.user-input {
+    background-color: rgba(255, 255, 255, 0.2); /* Background for user-input numbers */
+    color: #00ff9d; /* Text color for user-input numbers */
+
+  }
+  
+  .controls button {
+    border: 2px solid #00ff9d;
+    color: var(--button-text);
+    background-color: var(--button-bg);
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+  }
+  
+  .controls button:hover {
+    background-color: var(--button-hover);
+    text-shadow: 0 0 8px rgba(0, 255, 157, 0.8);
+  }
