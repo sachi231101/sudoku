@@ -71,13 +71,4 @@
     background-color: var(--button-bg);
     font-weight: bold;
     letter-spacing: 1px;
-    transition: all 0.3s;
-    width: 100px;
-    height: 40px;
-    border-radius: 5px;
-  }
-  
-  .controls button:hover {
-    background-color: var(--button-hover);
-    text-shadow: 0 0 8px rgba(0, 255, 157, 0.8);
-  }fjhfsdfhgfhsfhggjsfjshf
+    
